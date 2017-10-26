@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+
+<div ng-init="eslestirmeleriGetir()">
+	<table>
+		<tr>
+			<td style="border-bottom:solid 5px #94e09d">ESLESTIRMELER</td>
+		</tr>
+	    <tr ng-repeat="x in tumEslestirmeler">
+	        <td class="entry" id="isim"><a ng-click="eslestirmeGoruntule(x)">
+	        {{x}}
+	        </a></td>
+    	</tr>
+	</table>
+</div>
+
+<style>
+	#isim{
+		cursor: pointer;
+		padding: 2px;
+		border-radius: 5px;
+	}
+
+	#isim:hover{
+		text-decoration: underline;	
+		background-color: #165c16;
+		transition: background-color 0.2s;
+	}
+
+	table {
+		width: 70%;
+		border: solid 2px #94e09d;
+		border-radius: 20px;
+	  	background-color: #269b26;
+  		color: #ffffff;
+  		margin:auto;
+  		padding: 20px;
+	}
+
+	.entry {
+		padding-top : 20px;
+	}
+
+</style>
+
+<div style="text-align:center; margin-top: 40px; color: orange; border-top: dashed 2px orange;
+			font-size: 10px; padding-top: 20px">
+	<h1> 
+		Simdiye kadar yapilan eslestirmeler yukaridaki tabloda gozukmektedir.
+		<br>
+		Eslestirmeler yapildigi tarihe gore 
+		isimlendirilmistir. 
+		<br>
+		(Gun-Ay-Yil_Saat-Dakika)
+		<br><br>
+		Eslestirme sonuclarini gormek icin gormek istediginiz
+		eslesmenin uzerine tiklayiniz.
+	</h1>
+</div>

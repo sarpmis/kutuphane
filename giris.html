@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="giris" ng-controller="girisCtrl" ng-init="showTopBottom(); checkLogin()">
+
+	<head>
+		<title>Merak Kutuphanesi - Giris</title>
+		<link rel="stylesheet" href="style/giris_style.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- javascript include -->
+		<script src="angular/angular.min.js"></script> 
+		<script src="angular/angular.animate.js"></script>
+		<script src="js/giris.js" type="text/javascript"></script> 
+	</head>
+
+	<body>
+		<div ng-style = "top">
+			<div id="logo-container">
+				<img src="media/hayalgucu_merkezi.png" id="hayalgucu-img" ng-show="showTopContents">
+			</div>
+		</div>
+
+		<div ng-style="bottom">
+
+			<div id="hata" ng-if="error">
+				<h2>Giris yaparken bir hata olustu!</h2>
+				<ul>
+					<li> Email adresinin dogru oldugundan emin olun </li>
+					<li> Sifrenizi dogru girmemis olabilirsiniz </li>
+				</ul>
+			</div>
+
+			<form  id="girisFormu" ng-submit="tryLogin()" ng-show="showBottomContents">
+				<input type="text" placeholder="email adresiniz" ng-model="user.email" class="input" id="email">
+				<input type="password" placeholder="sifreniz" ng-model="user.password" class="input" id="password">
+
+
+			<style ng-if="user.email.length > 0 && user.password.length > 0">
+				.input{ border: solid 5px #9dc4a2; }
+			</style>
+
+			<button type="submit" form="girisFormu"  class="oval-button" ng-show="showBottomContents"> Giris Yap</button>
+			</form>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<div ng-init="ogrenciSorulariGetir()">
+	
+	<div style="text-align:center; margin-bottom: 40px; color: orange; border-bottom: dashed 2px orange">
+		<h1> 
+			{{ogrenciIsmi}} icin sorular gosteriliyor... 
+		</h1>
+	</div>
+
+	<!-- sorular tablosu -->
+	<table>
+		<tr>
+			<td style="border-bottom:solid 5px #94e09d" >SORULAR</td>
+		</tr>
+	    <tr ng-repeat="x in sorular">
+	        <td class="entry">{{x.soru}}</td>
+	        <td class="entry" id="sil-butonu"><a ng-click="soruSilTiklandi(x.id)">X</a></td>
+    	</tr>
+	</table>
+
+	<!-- Sil tusuna bastiginda cikan pop up -->
+	<div class="emin-misin" ng-if="soruSilmekIstiyorMusunuz">
+		<h2>Bu soruyu silmek istediginize emin misiniz? <br><br>
+			Silinen sorulara bir daha erisilemeyecek</h2>
+		<button type="button" class="oval-button" id="evet-oval-button"
+			style = "display: inline-block;" ng-click="evetSoruyuSil()">Evet</button>
+		<button type="button" class="oval-button" id="hayir-oval-button"
+		style = "display: inline-block;" ng-click="hayirSoruyuSilme()">Hayir</button>
+	</div>
+
+
+	<div style="text-align:center; margin: 100px 0 0 0; color: gray; font-size: 10px;
+				border: dashed 4px orange; width: 60%; margin-left: auto; margin-right: auto;
+				border-radius: 10px; padding: 10px">
+		<h1> 
+			Yeni soru eklemek icin soruyu asagiya girin ve "Soruyu Ekle" butonuna tiklayin.
+			<br>
+			Lutfen sorunun Turkce kurallarina uygun yazildigindan ve imla hatasi icermediginden emin olun!
+			<br><br>
+			Sorular tablodaki "X" tusuna basilarak silinebilir.
+		</h1>
+	</div>
+
+
+	<!-- soru ekleme formu -->
+	<form method="POST" id="soruFormu" ng-submit="soruEkle()">
+
+		<input type="text" placeholder="Eklenecek soru" autocomplete="off" 
+		class="inputText" ng-model="soru">
+
+		<button type="submit" form="soruFormu" class="oval-button">
+		Soruyu ekle
+		</button>
+
+	</form>
+
+
+
+
+	<!-- Test icin -->
+	<!-- 	<h1 style= "color: black"> ogrenci : {{currentId}} </h1>
+	<h1 style= "color: black"> basari: {{soru_ekleme_basari}} </h1>
+	 -->
+	 
+	<!-- gerisi style -->
+	<style>
+		table {
+			width: 70%;
+			border: solid 2px #94e09d;
+			border-radius: 20px;
+		  	background-color: #269b26;
+	  		color: #ffffff;
+	  		margin:auto;
+	  		padding: 20px;
+		}
+
+		.entry{
+			padding-top : 20px;
+		}
+		.emin-misin {
+			width: 50%;
+			background-color: orange;
+			margin: 0 23% 0 23%;
+			top: 150px;
+			padding: 30px;
+			border: solid 5px #5b1806;
+			border-radius: 18px;
+			color: white;
+			z-index:1; 
+			position: absolute;
+		}
+
+		#evet-oval-button{
+			border: solid 2px #fcb400;
+			background-color: red;
+			margin:auto;
+			width: 20%;
+		}
+		#evet-oval-button:hover{
+			border-color: #5b1806;
+		}
+
+		#evet-oval-button:active{
+			background-color: #5b1806;
+		}
+
+		#hayir-oval-button{
+			margin:auto;
+			width: 20%;
+		}
+
+		#sil-butonu{
+			width: 20px;
+			cursor: pointer;
+			transition: background-color 0.2s;
+			margin: auto;
+			text-align:center;
+		}
+		#sil-butonu:hover{
+			background-color: red;
+		}
+	</style>
+</div>

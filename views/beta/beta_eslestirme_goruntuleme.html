@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<h1 ng-init="eslestirmeyiGetir()" style="text-align:center; color: orange;"> {{secilenEslestirme}} </h1>
+
+
+<div>
+	<table>
+		<tr>
+			<td style="border-bottom:solid 5px #94e09d">Eşleşen Sorular</td>
+			<td style="border-bottom:solid 5px #94e09d"></td>
+			<td style="border-bottom:solid 5px #94e09d">Soruların Sahipleri</td>
+			<td style="border-bottom:solid 5px #94e09d"></td>
+		</tr>
+	    <tr ng-repeat="x in eslestirmeData">
+	        <td class="entry" id="soru">{{x[0]}}</td>
+	        <td class="entry" id="soru">{{x[1]}}</td>
+	        <td class="entry" id="isim"><a ng-click="ogrenciSayfasinaGit(x[4])">
+	        {{x[2]}}
+	        </a></td>
+	        <td class="entry" id="isim"><a ng-click="ogrenciSayfasinaGit(x[5])">
+	        {{x[3]}}
+	        </a></td>
+    	</tr>
+	</table>
+</div>
+
+
+<style>
+	#soru{
+		cursor: default;
+		padding: 2px;
+		border-radius: 5px;
+	}
+
+	#soru:hover{
+		background-color: #165c16;
+		transition: background-color 0.2s;
+	}
+
+	#isim{
+		cursor: pointer;
+		padding: 2px;
+		border-radius: 5px;
+	}
+
+	#isim:hover{
+		text-decoration: underline;	
+		background-color: #165c16;
+		transition: background-color 0.2s;
+	}
+
+	table {
+		width: 70%;
+		border: solid 2px #94e09d;
+		border-radius: 20px;
+	  	background-color: #269b26;
+  		color: #ffffff;
+  		margin:auto;
+  		padding: 20px;
+	}
+
+	.entry {
+		padding-top : 20px;
+		border-bottom: dashed 2px #94e09d;
+	}
+
+</style>

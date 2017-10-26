@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+	<div class="beta-link-container">
+		<form action="#!/beta_ogrenci_ekleme" class="beta-link"
+			id="beta-link-leftmost">
+			<input type="submit" class="oval-button-beta" value="Ogrenci Ekle">
+		</form>	
+		<form action="#!/beta_ogrenciler" class="beta-link">
+			<input type="submit" class="oval-button-beta" value="Ogrenciler">
+		</form>	
+		<form action="#!/beta_tum_sorular" class="beta-link">
+			<input type="submit" class="oval-button-beta" value="Sorular">
+		</form>	
+	</div>
+
+	<div class="beta-match-button-container">
+		<form ng-submit="eslestirTiklandi()" class="beta-link"
+			id="beta-link-leftmost">
+			<input type="submit" class="oval-button-beta" id="eslestirme-button" value="Eslestirmeye Basla!">
+		</form>	
+	</div>
+
+	<div class="emin-misin" ng-if="eslestirmeIstiyorMusunuz">
+		<h2> Sorulari eslestirmeye baslamak istediginizden 
+			 emin misiniz?  
+			 <br><br>
+			Eslestirme yapmadan once tum ogrencilerin ve sorularin sisteme girildiginden emin olun.
+			 <br><br>
+			Eslestirme sorulan butun sorulari teker teker birbiriyle karsilastirir ve en sonunda sorulari eslestirmenin optimal yolunu hesaplar.
+			<br><br>
+			Tum bunlar zaman alan islemlerdir ve ne kadar fazla soru varsa o kadar uzun surer.
+			<br><br>
+			Devam edilsin mi?</h2>
+		<button type="button" class="oval-button" id="evet-oval-button"
+			style = "display: inline-block;" ng-click="evetEslestir()">Evet</button>
+		<button type="button" class="oval-button" id="hayir-oval-button"
+		style = "display: inline-block;" ng-click="hayirEslestirme()">Hayir</button>
+	</div>
+
+	<style>
+
+	/*navigasyon butonlari*/
+	.oval-button-beta{
+		border-radius: 12px;
+		border: solid 2px #94e09d;
+		outline: none;
+		margin:auto;
+	  	display:block;
+	  	height: 60px;
+	  	width: 100%;
+	  	background-color: #269b26;
+	  	color: #ffffff;
+	  	font-size: 18px;
+	  	transition: border-color 0.3s, background-color 0.2s;
+	  	cursor: pointer;
+	}
+	.oval-button-beta:hover{
+		border-color: #165c16;
+	}
+	.oval-button-beta:active{
+		background-color: #165c16;
+	}
+	.beta-link {
+		width: 19%;
+		margin: 0 10% 0 0;
+		display: inline-block;
+	}
+	#beta-link-leftmost {
+		margin: 0 10% 0 9%;
+	}
+	.beta-link-container{
+		/*background-color: green;*/
+		width: 90%;
+		margin: 0 5% 0 5%;
+	}
+
+
+	/*eslestir buton*/
+	.beta-match-button-container{
+		width: 100%;
+		margin: 100px 30% 0 30%;
+	}
+	#eslestirme-button{
+		background-color: orange;
+		border-color: #f9ec70;
+	}
+	#eslestirme-button:hover{
+		border-color: #a83605;
+	}
+	#eslestirme-button:active{
+		background-color: #a83605;
+	}
+
+
+	/*eslestirmeye emin misin pop-up*/
+	.emin-misin {
+		width: 50%;
+		background-color: orange;
+		margin: 0 23% 0 23%;
+		top: 150px;
+		padding: 30px;
+		border: solid 5px #5b1806;
+		border-radius: 18px;
+		color: white;
+		z-index:1; 
+		position: absolute;
+	}
+
+	#evet-oval-button{
+		border: solid 2px #fcb400;
+		background-color: red;
+		margin:auto;
+		width: 20%;
+	}
+	#evet-oval-button:hover{
+		border-color: #5b1806;
+	}
+
+	#evet-oval-button:active{
+		background-color: #5b1806;
+	}
+
+	#hayir-oval-button{
+		margin:auto;
+		width: 20%;
+	}
+
+	</style>
+
+
+
+	
+<div style="text-align:center; margin-top: 40px; color: orange; border-top: dashed 2px orange;
+			font-size: 10px; padding-top: 20px">
+	<h1> 
+		Merhaba! Soru eklemek için ilk olarak "Öğrenci Ekle" sekmesine girip soruyu soracak öğrenciyi ekleyiniz. 
+		<br><br>
+		Öğrenci zaten kayıtlıysa "Öğrenciler" sekmesinden doğru isme tıklayarak sorunuzu ekleyebilirsiniz.
+	</h1>
+</div>

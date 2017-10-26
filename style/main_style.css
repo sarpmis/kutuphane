@@ -1,0 +1,80 @@
+.inputText{
+	display: block;
+	margin: 120px 15% 10px 15%;
+	width: 70%;
+	height: 30px;
+	font-family: sans-serif;
+	font-size: 20px;
+	border-radius: 10px;
+	padding: 10px;
+	outline: none;
+  	border: solid 5px #9dc4a2;
+  	transition: box-shadow 0.7s, border 0.7s;
+}
+.inputText:focus {
+	border: solid 5px #94e09d;
+}
+.oval-button{
+	border-radius: 28px;
+	border: solid 2px #94e09d;
+	outline: none;
+	margin:auto;
+  	display:block;
+  	height: 60px;
+  	width: 180px;
+  	background-color: #269b26;
+  	color: #ffffff;
+  	font-size: 18px;
+  	transition: border-color 0.3s, background-color 0.2s;
+  	cursor: pointer;
+}
+.oval-button:hover{
+	border-color: #165c16;
+}
+.oval-button:active{
+	background-color: #165c16;
+}
+body{
+	margin: 110px 0px;
+	font-family: sans-serif;
+}
+.abc{
+	margin: 50px 15% 10px 15%;
+	width: 70%;
+	background-color: #ffffff;
+	border-radius: 20px;
+  	border: solid 5px #9dc4a2;
+	padding: 10px;
+}
+/***************** SORU DIV *******************/
+.tumSorular{
+	margin: 50px 15% 10px 15%;
+	width: 70%;
+	background-color: #ffffff;
+	border-radius: 20px;
+  	border: solid 5px #9dc4a2;
+	padding: 10px;
+}
+.tekSoru{
+	width: 100%;
+	background-color: #e5e5e5;
+	border-radius: 5px;
+	height: 30px;
+	border: solid 1px;
+	margin-bottom: 20px;
+	padding: 0;
+}
+.soru{
+	background-color: wheat;
+	float: left;
+	height: 100%;
+	font-size: 70%;
+
+}
+.sil{
+	background-color: red;
+	float: right;
+}
+.silButonu{
+	width: 70px;
+}

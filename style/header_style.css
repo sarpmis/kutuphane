@@ -1,0 +1,43 @@
+#blankSpace {
+	margin-bottom: 300px;
+}
+
+#head {
+	background: #008050;
+	font-family: sans-serif;
+	width: 100%;
+	height: 110px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100%;
+}
+a {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+}
+#logoDiv{
+	width: 35%;
+	font-size:12;
+	float: left;
+	text-overflow: clip;
+}
+#logo-image{
+	height: 90px;
+	float: left;
+	padding: 5px 80px 10px 15px;
+}
+nav{
+	float: right;
+	padding: 35px 20px 0px 0px;
+}
+
+ul{
+	list-style: none;
+}
+nav ul li {
+	display: inline-block;
+	float: left;
+	padding: 10px;
+}

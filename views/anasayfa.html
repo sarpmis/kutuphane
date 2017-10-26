@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<div ng-init="init()">
+
+	<h1 style="text-align: center;"> Hosgeldin {{info.isim}}... </h1>
+
+	<div class="tumSorular">
+<!-- 		<div ng-repeat="x in sorular" class="tekSoru" ng-if="x['showq'] == 1">
+				<div class="soru"><p>{{x['question']}}</p></div> 
+				<div class="sil"><button class="silButonu" ng-click="removeAndGetQ(x['id'])">sil</button></div>		
+		</div> -->
+	</div>
+
+	<form method="POST" id="soruFormu" ng-submit="buttonPressed()">
+		<input type="text" placeholder="Sorunu Gir!" autocomplete="off" class="inputText" name="girilenSoru" ng-model="soru">
+		<button type="submit" form="soruFormu" class="oval-button">Sorunu sor</button>
+	</form>
+
+	<h1 style="text-align: center;">{{soru}} | {{test}} | {{soruSuccess}}</h1>
+
+	<form method="POST" id="textFormu" ng-submit="processText()">
+		<input type="text" spellcheck="false" autocomplete="off" placeholder="Text Buraya" class="inputText" name="girilenSoru" ng-model="text">
+		<button type="submit" form="textFormu" class="oval-button">Process Text</button>
+	</form>
+
+	<h1 style="text-align: center;">{{cevap}}</h1>
+
+</div>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<div ng-init="init()">
+
+	<form method="POST" id="ogrenciFormu" ng-submit="ogrenciEkle()">
+
+		<input type="text" placeholder="Ogrencinin Adi" autocomplete="off" class="inputText" id="isim_input" ng-model="isim" style="width : 30%; margin: 120px 35% 10px 35%;">
+
+		<input type="text" placeholder="Ogrencinin Okulu" autocomplete="off" class="inputText"  id="okul_input" ng-model="okul" style="width : 30%; margin: 50px 35% 10px 35%;">
+
+		<input type="text" placeholder="Ogrencinin Sinifi" autocomplete="off" class="inputText"  id="sinif_input" ng-model="sinif" style="width : 30%; margin: 50px 35% 50px 35%;">
+
+
+		<button type="submit" form="ogrenciFormu" class="oval-button">Ogrenci Ekle</button>
+
+		<style ng-if="isim.length === 0">
+			#isim_input{ border: solid 5px #ffb83f; }
+		</style>
+
+		<style ng-if="okul.length === 0">
+			#okul_input{ border: solid 5px #ffb83f; }
+		</style>
+
+		<style ng-if="sinif.length === 0">
+			#sinif_input{ border: solid 5px #ffb83f; }
+		</style>
+
+
+		<h1 style="text-align:center;">{{giris_cevap}}</h1>
+
+	</form>
+
+</div>

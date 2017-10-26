@@ -1,0 +1,7 @@
+CREATE TABLE frekanslar (
+		  `key1` int(11) NOT NULL,
+		  `key2` int(11) NOT NULL,
+		  `frequency` int(11) NOT NULL
+		) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'frekanslar' already exists
+

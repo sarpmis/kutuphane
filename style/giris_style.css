@@ -1,0 +1,96 @@
+#head{
+	width: 35%;
+	font-size:12;
+	float: left;
+	text-overflow: clip;
+}
+body{
+	margin-top: 110px;
+}
+.oval-button{
+	border-radius: 28px;
+	border: solid 2px #94e09d;
+	outline: none;
+	margin:auto;
+  	display:block;
+  	height: 60px;
+  	width: 180px;
+  	background-color: #269b26;
+  	color: black;
+  	font-size: 18px;
+  	transition: border-color 0.3s, background-color 0.2s;
+  	cursor: pointer;
+}
+.oval-button:hover{
+	border-color: #165c16;
+}
+.oval-button:active{
+	background-color: #165c16;
+}
+.input{
+	display: block;
+	margin-left: 30%;
+	margin-right: 30%;
+	padding: 10px;
+	width: 40%;
+	height: 30px;
+	font-family: sans-serif;
+	font-size: 20px;
+	border-radius: 10px;
+	outline: none;
+  	border: solid 5px #ffb83f;
+  	transition: box-shadow 0.7s, border 0.7s;
+}
+.input:focus {
+	border: solid 5px #94e09d;
+}
+#email{
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+#password{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+h1{
+	margin-top: 40px;
+	font-family: sans-serif;
+	text-align: center;
+	color: #ffffff;
+}
+
+/******** HATA MESAJI **********/
+#hata{
+	background-color: #bc2401;
+	font-family: sans-serif;
+	display: block;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding: 20px;
+	width: 60%;
+	border-radius: 20px;
+	color: #ffffff;
+	margin-top: 30px;
+}
+#hata.ul{
+	margin-left: 50px;
+}
+
+#hata.h2{
+	margin-left: 50px;
+}
+
+/******** LOGO ****************/
+
+#hayalgucu-img{
+	/*width: 40%;*/
+	max-height: 300px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+#logo-container{
+    margin: auto;
+    max-width: 40%;
+}

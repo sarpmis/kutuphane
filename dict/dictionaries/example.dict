@@ -1,0 +1,45 @@
+ac ::  (adipiscing-1), (dapibus-1), (elit-1), (mi-1), (nullam-1), (porttitor-1), (pretium-1), <br>
+adipiscing ::  (ac-1), (amet-2), (consectetur-2), (dapibus-2), (dolor-2), (elit-2), (est-1), (ipsum-2), (mi-1), (morbi-1), (nullam-1), (sit-2), (vel-1), <br>
+amet ::  (adipiscing-2), (consectetur-2), (dapibus-1), (dolor-2), (elit-2), (ipsum-2), (lorem-2), (morbi-1), (nullam-1), (sit-2), (vel-1), (vulputate-1), <br>
+ante ::  (dapibus-1), (elementum-1), (mollis-1), (neque-1), (non-2), (nulla-1), (tempor-1), (vel-1), (vivamus-1), <br>
+commodo ::  (convallis-1), (dui-1), (interdum-1), (lacinia-1), (lectus-1), (lorem-1), (mi-1), (nisl-1), (non-1), (vestibulum-1), <br>
+consectetur ::  (adipiscing-2), (amet-2), (dapibus-1), (dolor-2), (elit-2), (est-1), (ipsum-2), (lorem-2), (mi-1), (morbi-1), (nullam-1), (sit-2), (vel-1), <br>
+convallis ::  (commodo-1), (eget-1), (elementum-2), (fusce-1), (integer-1), (interdum-1), (ipsum-1), (lacinia-1), (lorem-1), (mi-1), (neque-1), (nisl-1), (non-1), (odio-1), (orci-1), (posuere-1), (vestibulum-1), (vitae-1), (vivamus-1), <br>
+dapibus ::  (ac-1), (adipiscing-2), (amet-1), (ante-1), (consectetur-1), (elementum-1), (elit-2), (enim-1), (est-1), (eu-1), (mi-1), (morbi-1), (neque-1), (non-2), (nulla-1), (nullam-1), (odio-1), (orci-1), (pharetra-1), (porttitor-1), (posuere-1), (pretium-1), (tempor-1), (vel-2), (vivamus-1), <br>
+dolor ::  (adipiscing-2), (amet-2), (consectetur-2), (dui-1), (elit-2), (ipsum-2), (lorem-2), (mollis-1), (sit-2), (vulputate-1), <br>
+dui ::  (commodo-1), (dolor-1), (eget-1), (elementum-1), (fusce-1), (ipsum-2), (lectus-1), (lorem-1), (mollis-2), (nisl-1), (non-2), (nulla-1), (sit-1), (tempor-1), (vel-1), (vestibulum-1), (vulputate-1), <br>
+eget ::  (convallis-1), (dui-1), (elementum-1), (fusce-1), (ipsum-1), (lectus-1), (mollis-1), (non-1), (odio-1), (vitae-1), <br>
+elementum ::  (ante-1), (convallis-2), (dapibus-1), (dui-1), (eget-1), (fusce-2), (ipsum-1), (lectus-1), (mollis-1), (neque-1), (non-3), (odio-1), (vestibulum-1), (vitae-2), (vivamus-1), <br>
+elit ::  (ac-1), (adipiscing-2), (amet-2), (consectetur-2), (dapibus-2), (dolor-2), (est-1), (mi-1), (morbi-1), (nullam-1), (pharetra-1), (porttitor-1), (sit-2), (vel-1), <br>
+enim ::  (dapibus-1), (est-1), (eu-1), (integer-1), (lacinia-1), (morbi-1), (orci-1), (pharetra-1), (posuere-1), (vel-1), <br>
+est ::  (adipiscing-1), (consectetur-1), (dapibus-1), (elit-1), (enim-1), (eu-1), (morbi-1), (pharetra-1), (posuere-1), (vel-1), <br>
+eu ::  (dapibus-1), (enim-1), (est-1), (integer-1), (lacinia-1), (lorem-1), (orci-1), (pharetra-1), (posuere-1), (vel-1), <br>
+fusce ::  (convallis-1), (dui-1), (eget-1), (elementum-2), (ipsum-1), (mollis-1), (non-1), (odio-1), (vitae-1), <br>
+integer ::  (convallis-1), (enim-1), (eu-1), (interdum-1), (lacinia-1), (lorem-1), (mi-1), (orci-1), (pharetra-1), (posuere-1), <br>
+interdum ::  (commodo-1), (convallis-1), (integer-1), (lacinia-1), (lorem-1), (mi-1), (nisl-1), (non-1), (orci-1), (vestibulum-1), <br>
+ipsum ::  (adipiscing-2), (amet-2), (consectetur-2), (convallis-1), (dolor-2), (dui-2), (eget-1), (elementum-1), (fusce-1), (lectus-1), (lorem-2), (mollis-2), (non-1), (odio-1), (sit-2), (vel-1), (vitae-1), (vulputate-1), <br>
+lacinia ::  (commodo-1), (convallis-1), (enim-1), (eu-1), (integer-1), (interdum-1), (lorem-1), (mi-1), (orci-1), (posuere-1), <br>
+lectus ::  (commodo-1), (dui-1), (eget-1), (elementum-1), (ipsum-1), (mi-1), (mollis-1), (nisl-1), (non-1), (vestibulum-1), <br>
+lorem ::  (amet-2), (commodo-1), (consectetur-2), (convallis-1), (dolor-2), (dui-1), (eu-1), (integer-1), (interdum-1), (ipsum-2), (lacinia-1), (mi-1), (mollis-1), (nisl-1), (orci-1), (posuere-1), (sit-2), (tempor-1), (vel-1), (vulputate-1), <br>
+mi ::  (ac-1), (adipiscing-1), (commodo-1), (consectetur-1), (convallis-1), (dapibus-1), (elit-1), (integer-1), (interdum-1), (lacinia-1), (lectus-1), (lorem-1), (nisl-1), (non-1), (nullam-1), (porttitor-1), (pretium-1), (vestibulum-1), <br>
+mollis ::  (ante-1), (dolor-1), (dui-2), (eget-1), (elementum-1), (fusce-1), (ipsum-2), (lectus-1), (lorem-1), (nisl-1), (non-2), (nulla-1), (tempor-1), (vel-1), (vestibulum-1), (vitae-1), (vulputate-1), <br>
+morbi ::  (adipiscing-1), (amet-1), (consectetur-1), (dapibus-1), (elit-1), (enim-1), (est-1), (pharetra-1), (sit-1), (vel-1), <br>
+neque ::  (ante-1), (convallis-1), (dapibus-1), (elementum-1), (non-2), (nulla-1), (odio-1), (vitae-1), (vivamus-1), <br>
+nisl ::  (commodo-1), (convallis-1), (dui-1), (interdum-1), (lectus-1), (lorem-1), (mi-1), (mollis-1), (non-1), (vestibulum-1), <br>
+non ::  (ante-2), (commodo-1), (convallis-1), (dapibus-2), (dui-2), (eget-1), (elementum-3), (fusce-1), (interdum-1), (ipsum-1), (lectus-1), (mi-1), (mollis-2), (neque-2), (nisl-1), (nulla-1), (odio-1), (tempor-1), (vel-1), (vestibulum-1), (vitae-1), (vivamus-2), <br>
+nulla ::  (ante-1), (dapibus-1), (dui-1), (mollis-1), (neque-1), (non-1), (tempor-1), (vel-1), (vivamus-1), (vulputate-1), <br>
+nullam ::  (ac-1), (adipiscing-1), (amet-1), (consectetur-1), (dapibus-1), (elit-1), (mi-1), (porttitor-1), (pretium-1), (sit-1), <br>
+odio ::  (convallis-1), (dapibus-1), (eget-1), (elementum-1), (fusce-1), (ipsum-1), (neque-1), (non-1), (vitae-1), (vivamus-1), <br>
+orci ::  (convallis-1), (dapibus-1), (enim-1), (eu-1), (integer-1), (interdum-1), (lacinia-1), (lorem-1), (pharetra-1), (posuere-1), <br>
+pharetra ::  (dapibus-1), (elit-1), (enim-1), (est-1), (eu-1), (integer-1), (morbi-1), (orci-1), (posuere-1), (vel-1), <br>
+porttitor ::  (ac-1), (dapibus-1), (elit-1), (mi-1), (nullam-1), (pretium-1), <br>
+posuere ::  (convallis-1), (dapibus-1), (enim-1), (est-1), (eu-1), (integer-1), (lacinia-1), (lorem-1), (orci-1), (pharetra-1), <br>
+pretium ::  (ac-1), (dapibus-1), (mi-1), (nullam-1), (porttitor-1), <br>
+sit ::  (adipiscing-2), (amet-2), (consectetur-2), (dolor-2), (dui-1), (elit-2), (ipsum-2), (lorem-2), (morbi-1), (nullam-1), (vulputate-1), <br>
+tempor ::  (ante-1), (dapibus-1), (dui-1), (lorem-1), (mollis-1), (non-1), (nulla-1), (vel-1), (vivamus-1), (vulputate-1), <br>
+vel ::  (adipiscing-1), (amet-1), (ante-1), (consectetur-1), (dapibus-2), (dui-1), (elit-1), (enim-1), (est-1), (eu-1), (ipsum-1), (lorem-1), (mollis-1), (morbi-1), (non-1), (nulla-1), (pharetra-1), (tempor-1), (vulputate-1), <br>
+vestibulum ::  (commodo-1), (convallis-1), (dui-1), (elementum-1), (interdum-1), (lectus-1), (mi-1), (mollis-1), (nisl-1), (non-1), <br>
+vitae ::  (convallis-1), (eget-1), (elementum-2), (fusce-1), (ipsum-1), (mollis-1), (neque-1), (non-1), (odio-1), <br>
+vivamus ::  (ante-1), (convallis-1), (dapibus-1), (elementum-1), (neque-1), (non-2), (nulla-1), (odio-1), (tempor-1), <br>
+vulputate ::  (amet-1), (dolor-1), (dui-1), (ipsum-1), (lorem-1), (mollis-1), (nulla-1), (sit-1), (tempor-1), (vel-1), <br>
+<br>

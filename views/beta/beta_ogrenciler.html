@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+
+
+
+<div ng-init="tumOgrencileriGetir()">
+	<table>
+		<tr>
+			<td style="border-bottom:solid 5px #94e09d">ISIM</td>
+			<td style="border-bottom:solid 5px #e5e5e5">OKUL</td>
+			<td style="border-bottom:solid 5px #165c16">SINIF</td>
+			<!-- <td style="border-bottom:solid 5px #165c16">	</td> -->
+		</tr>
+	    <tr ng-repeat="x in tumOgrenciler">
+	        <td class="entry" id="isim"><a ng-click="ogrenciSayfasinaGit(x.id)">
+	        {{x.isim}}
+	        </a></td>
+	        <td class="entry">{{x.okul}}</td>
+	        <td class="entry">{{x.sinif}}</td>
+	        <td class="entry" id="sil-butonu"><a ng-click="ogrenciSilTiklandi(x.id, x.isim)">X</a></td>
+    	</tr>
+	</table>
+</div>
+
+<div class="emin-misin" ng-if="ogrenciSilmekIstiyorMusunuz">
+	<h2>"{{silinecekOgrencininIsmi}}" isimli ogrenciyi silmek istediginize emin misiniz? <br><br>
+		Ogrencinin tum sorulari da silinecek.</h2>
+	<button type="button" class="oval-button" id="evet-oval-button"
+		style = "display: inline-block;" ng-click="evetOgrenciSil()">Evet</button>
+	<button type="button" class="oval-button" id="hayir-oval-button"
+	style = "display: inline-block;" ng-click="hayirOgrenciSilme()">Hayir</button>
+</div>
+
+<div style="text-align:center; margin-top: 40px; color: orange; border-top: dashed 2px orange;
+			font-size: 10px; padding-top: 20px">
+	<h1> 
+		Bu sayfada girilen tum ogrencileri gorebilirsiniz. 
+		<br>
+		Bir ogrencinin sorularini goruntulemek icin ismine tiklayin. 
+		<br><br>
+		Ogrenci eklemek icin sayfanin sag ust kisminda bulunan "Ogrenci Ekle" sayfasini ziyaret edin.
+		<br><br>
+		Ogrenci isminin yanindaki "X" butonu ogrenciyi ve sordugu tum sorulari siler.
+	</h1>
+</div>
+
+<style>
+	table {
+		width: 70%;
+		border: solid 2px #94e09d;
+		border-radius: 20px;
+	  	background-color: #269b26;
+  		color: #ffffff;
+  		margin:auto;
+  		padding: 20px;
+	}
+
+	.entry {
+		padding-top : 20px;
+	}
+
+	.emin-misin {
+		width: 50%;
+		background-color: orange;
+		margin: 0 23% 0 23%;
+		top: 150px;
+		padding: 30px;
+		border: solid 5px #5b1806;
+		border-radius: 18px;
+		color: white;
+		z-index:1; 
+		position: absolute;
+	}
+
+	#evet-oval-button{
+		border: solid 2px #fcb400;
+		background-color: red;
+		margin:auto;
+		width: 20%;
+	}
+	#evet-oval-button:hover{
+		border-color: #5b1806;
+	}
+
+	#evet-oval-button:active{
+		background-color: #5b1806;
+	}
+
+	#hayir-oval-button{
+		margin:auto;
+		width: 20%;
+	}
+
+	#isim{
+		cursor: pointer;
+		padding: 2px;
+		border-radius: 5px;
+	}
+
+	#isim:hover{
+		text-decoration: underline;	
+		background-color: #165c16;
+		transition: background-color 0.2s;
+	}
+
+	#sil-butonu{
+		width: 20px;
+		cursor: pointer;
+		transition: background-color 0.2s;
+		margin: auto;
+		text-align:center;
+	}
+	#sil-butonu:hover{
+		background-color: red;
+	}
+
+</style>

@@ -1,0 +1,11 @@
+ ne 
+ neler 
+ nedir 
+ nelerdir 
+ neyi 
+ neye 
+ neden 
+ ki 
+ kim 
+ mi 
+?
