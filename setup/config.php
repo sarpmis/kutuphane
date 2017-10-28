@@ -24,7 +24,7 @@
 
 	$db_table_name_frekanslar = 'frekanslar';
 	
-	$db_error_log_file = (__DIR__.'database_error_log');
+	$db_error_log_file = (__DIR__.'database_error_log.log');
 
 
 ?>

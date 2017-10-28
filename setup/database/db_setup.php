@@ -60,5 +60,4 @@
 		$error_log = $error_log.$sql."\n".$e->getMessage()."\n\n";
 		file_put_contents($db_error_log_file, $error_log);
 	}
-
 ?>

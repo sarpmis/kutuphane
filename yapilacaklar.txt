@@ -1,0 +1,45 @@
+/ *********** ILK/ACIL/KESIN YAPILACAKLAR *********** \
+
+* database_handler class'i artik yok. Onun icindeki metodlari dagit.
+  suanki database dosyasi artik 'egitici' olabilir. Onun yerine 
+  yeni bir database dosyasi olusturup database_handler'daki metodlar
+  bunun icindeki bir script'e aktarilmali. (Dependencylere dikkat!)
+
+* egitici'yi duzenle. config.php dosyasiyla uyumlu yap. 
+icindeki constantlari config'e at. (file path, vb)
+
+* aynisini query handler icin yap (burada is cok az 
+olabilir)
+
+* beta icin. (kutuphane/php/beta_php)'de beta icin kullandigimiz
+scriptler var. Bunlarla uyumlu db tablolari yapmamiz lazim
+dt_setup.php'ye eklenmeli tablo olusturma queryleri
+
+	- gereken tablolar = ogrenciler, sorular
+	- butun scriptlerin tr modulunun yeni versiyonuyla calismasini 
+	  saglamak gerek
+
+/ *********** DAHA SONRA YAPILACAKLAR *********** \
+
+* eslestirmeleri tr modulunun icine almak
+
+* egitici'ye direkt file upload ile ekleme yapilabilen sayfa.
+	- egitici corpus_size'i track etmeli. (belki egitici bir file icinde)
+	- file upload / type check (text oldugundan emin ol)
+	- corpus'a boyle eklenen her file egiticinin icindeki bir dosya'da
+	  tutulmali 
+	- (BIRAZ STRETCH) egitici upload edilen file'larin hangilerinin
+	  eklendigini hangilerinin eklenmedigini bilmeli. eklenmeyen file'lari
+	  gostermeli sayfada (liste olarak). Ekle butonu ile eklenmeli. Egitici
+	  calisirken ekleme yapilamamali. Bu da bir file'da tutulabilir 
+	  (calisiyor/calismiyor egitici ise baslarken ve bitirdiginde bu 
+	  file'i degistirir {baslama zamani/bitis zamani falan da eklenebilir})
+
+* eslestirmeler icin de bir ustteki sey yapilmali. (Eslestirme devam ediyor 
+	mu? ne zaman basladi? ne zaman bitti? ayri bir file'da tutulabilir)
+
+/ *********** SERVER'A ATILIRKEN *********** \
+
+* Server PHP config'de max script runtime artirilmali. Max time 90sn galiba.
+
+	
