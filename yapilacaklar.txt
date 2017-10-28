@@ -42,4 +42,6 @@ dt_setup.php'ye eklenmeli tablo olusturma queryleri
 
 * Server PHP config'de max script runtime artirilmali. Max time 90sn galiba.
 
+* Bu bir degisiklik.
+
 	
